@@ -12,9 +12,11 @@ router.post("/register", async (req, res) => {
   user.name = req.body.name;
   user.email = req.body.email;
   user.password = req.body.password;
-  user.role = "user";
+  user.roles = "user";
   await user.generateHashedPassword();
-  await user.save();
+  const temp = await user.save();
+  console.log(temp);
+  // await user.save();
   let token = jwt.sign(
     { _id: user._id, name: user.name, role: user.role },
     config.get("jwtPrivateKey")
