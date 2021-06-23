@@ -1,4 +1,4 @@
 {
   "jwtPrivateKey": "jwtPrivateKey",
-  "db": "mongodb+srv://soman:soman@cluster0.9zxit.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+  "db": "mongodb+srv://soman:somantalha@cluster0.9zxit.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 }
