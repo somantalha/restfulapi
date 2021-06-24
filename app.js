@@ -11,21 +11,21 @@ var productsRouter = require("./routes/api/products");
 var config = require("config");
 var app = express();
 
-// app.use(cors());
-var corsOptionsDelegate = function (req, callback) {
-  var corsOptions;
-  if (allowlist.indexOf(req.header("Origin")) !== -1) {
-    corsOptions = { origin: true, credentials: true }; // reflect (enable) the requested origin in the CORS response
-  } else {
-    corsOptions = { origin: false }; // disable CORS for this request
-  }
-  callback(null, corsOptions); // callback expects two parameters: error and options
-};
-app.use(cors(corsOptionsDelegate));
-var allowlist = [
-  "http://localhost:3000/",
-  "https://firstreact-frontend.herokuapp.com/",
-];
+app.use(cors());
+// var corsOptionsDelegate = function (req, callback) {
+//   var corsOptions;
+//   if (allowlist.indexOf(req.header("Origin")) !== -1) {
+//     corsOptions = { origin: true, credentials: true }; // reflect (enable) the requested origin in the CORS response
+//   } else {
+//     corsOptions = { origin: false }; // disable CORS for this request
+//   }
+//   callback(null, corsOptions); // callback expects two parameters: error and options
+// };
+// app.use(cors(corsOptionsDelegate));
+// var allowlist = [
+//   "http://localhost:3000/",
+//   "https://firstreact-frontend.herokuapp.com/",
+// ];
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
