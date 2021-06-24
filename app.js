@@ -36,6 +36,72 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/api/users", usersRouter);
 app.use("/api/products", productsRouter);
 app.use(express.static(path.join(__dirname, "/firstreact/build")));
+app.get("/login", function (req, res) {
+  res.sendFile(path.join(__dirname + "/firstreact/build/index.html"));
+});
+app.get("/register", function (req, res) {
+  res.sendFile(path.join(__dirname + "/firstreact/build/index.html"));
+});
+app.get("/blog", function (req, res) {
+  res.sendFile(path.join(__dirname + "/firstreact/build/index.html"));
+});
+app.get("/home/AllProducts/:page?", function (req, res) {
+  res.sendFile(path.join(__dirname + "/firstreact/build/index.html"));
+});
+app.get("/home/Shoes/:page?", function (req, res) {
+  res.sendFile(path.join(__dirname + "/firstreact/build/index.html"));
+});
+app.get("/home/Watches/:page?", function (req, res) {
+  res.sendFile(path.join(__dirname + "/firstreact/build/index.html"));
+});
+app.get("/home/Bags/:page?", function (req, res) {
+  res.sendFile(path.join(__dirname + "/firstreact/build/index.html"));
+});
+app.get("/home/Accessories/:page", function (req, res) {
+  res.sendFile(path.join(__dirname + "/firstreact/build/index.html"));
+});
+app.get("/home/Women/:page?", function (req, res) {
+  res.sendFile(path.join(__dirname + "/firstreact/build/index.html"));
+});
+app.get("/home/Men/:page?", function (req, res) {
+  res.sendFile(path.join(__dirname + "/firstreact/build/index.html"));
+});
+app.get("/home/:page?", function (req, res) {
+  res.sendFile(path.join(__dirname + "/firstreact/build/index.html"));
+});
+app.get("/Shop", function (req, res) {
+  res.sendFile(path.join(__dirname + "/firstreact/build/index.html"));
+});
+app.get("/addnew", function (req, res) {
+  res.sendFile(path.join(__dirname + "/firstreact/build/index.html"));
+});
+app.get("/update/:id", function (req, res) {
+  res.sendFile(path.join(__dirname + "/firstreact/build/index.html"));
+});
+app.get("/features", function (req, res) {
+  res.sendFile(path.join(__dirname + "/firstreact/build/index.html"));
+});
+app.get("/blog/BlogWinter-to-SpringFashion", function (req, res) {
+  res.sendFile(path.join(__dirname + "/firstreact/build/index.html"));
+});
+app.get("/blog/BlogGreatBigList", function (req, res) {
+  res.sendFile(path.join(__dirname + "/firstreact/build/index.html"));
+});
+app.get("/blog/BlogInspiringWays", function (req, res) {
+  res.sendFile(path.join(__dirname + "/firstreact/build/index.html"));
+});
+app.get("/contact", function (req, res) {
+  res.sendFile(path.join(__dirname + "/firstreact/build/index.html"));
+});
+app.get("/about", function (req, res) {
+  res.sendFile(path.join(__dirname + "/firstreact/build/index.html"));
+});
+app.get("/Not-Found", function (req, res) {
+  res.sendFile(path.join(__dirname + "/firstreact/build/index.html"));
+});
+app.get("/:page?", function (req, res) {
+  res.sendFile(path.join(__dirname + "/firstreact/build/index.html"));
+});
 
 app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname + "/index.html"));

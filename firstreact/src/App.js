@@ -11,8 +11,6 @@ import {
 import React from "react";
 import "./App.css";
 import MenuNavbar from "./components/menuNavbar";
-// import ProductCategories from './components/productCategories';
-// import ProductOverview from './components/productOverview';
 import Footercomp from "./components/footercomp";
 import landingpage from "./components/landingpage";
 import homepage from "./components/homepage";
@@ -39,7 +37,7 @@ import { CookiesProvider } from "react-cookie";
 import BlogGreatBigList from "./components/BlogGreatBigList";
 import BlogWintertoSpringFashion from "./components/BlogWinter-to-SpringFashion";
 import Accessories from "./components/products/Accessories";
-import AddToCart from "./components/AddToCart";
+
 function App() {
   return (
     <Router>
